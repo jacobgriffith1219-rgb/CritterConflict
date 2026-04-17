@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="sys-ad02-df11-d968-f97a" name="Critter Conflicts" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <categoryEntries>
+    <categoryEntry name="Champion" id="9390-bf39-3d27-bbc1" hidden="false"/>
+    <categoryEntry name="Infantry" id="6397-ba1e-3f8c-fae9" hidden="false"/>
+    <categoryEntry name="Grand Colonies" id="19e7-ad37-af4a-fc4f" hidden="false"/>
+    <categoryEntry name="Mammalian Boroughs" id="d86e-a379-3237-ede9" hidden="false"/>
+    <categoryEntry name="Ant" id="1b00-f917-e572-07b1" hidden="false"/>
+    <categoryEntry name="Disposable" id="c4da-2812-c7e8-c8e6" hidden="false"/>
+    <categoryEntry name="Elite" id="1895-1464-4c34-2f0b" hidden="false"/>
+    <categoryEntry name="Arachnid" id="6e0a-bbf6-f057-1148" hidden="false"/>
+    <categoryEntry name="Mindless Swarm" id="8eb7-622d-2f79-f11f" hidden="false"/>
+    <categoryEntry name="Monstrum" id="4bf8-137d-fdec-7a01" hidden="false"/>
+    <categoryEntry name="Bunny" id="12ff-967b-8c5a-1de0" hidden="false"/>
+    <categoryEntry name="Rodent" id="55e9-a56f-ed47-a210" hidden="false"/>
+    <categoryEntry name="Fox" id="b778-c018-32ab-16ee" hidden="false"/>
+    <categoryEntry name="Hare" id="718e-5798-a92a-d971" hidden="false"/>
+    <categoryEntry name="Veteran Hero" id="7cdc-11fd-ee3d-709c" hidden="false"/>
+    <categoryEntry name="Secondary Cards" id="8383-cdcf-c817-b502" hidden="false" publicationId="dc00-d754-4c4e-532f" page="18"/>
+    <categoryEntry name="War Construct" id="fc3d-2ff9-3d65-82df" hidden="false"/>
+    <categoryEntry name="Termite" id="a179-0d04-f36f-7c33" hidden="false"/>
+    <categoryEntry name="Centipede" id="916c-5c32-d3bd-e7bf" hidden="false"/>
+    <categoryEntry name="Fly" id="50e1-a473-72ff-8c3a" hidden="false"/>
+    <categoryEntry name="Mole" id="8897-c904-3a26-6a5a" hidden="false"/>
+    <categoryEntry name="Bat" id="b64e-9bed-b3a5-7f59" hidden="false"/>
+    <categoryEntry name="Hedgehog" id="8197-14cd-9df6-fa26" hidden="false"/>
+    <categoryEntry name="Behemoth" id="d63e-2557-258a-6ae1" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Stamford Avenue Compliant" hidden="false" id="default-force" publicationId="dc00-d754-4c4e-532f" page="8">
+      <categoryLinks>
+        <categoryLink name="Veteran Hero" hidden="false" id="d425-06df-c189-c916" targetId="7cdc-11fd-ee3d-709c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be93-289a-e05f-2ddc"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Champion" hidden="false" id="default-force-category-link" targetId="9390-bf39-3d27-bbc1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="daca-5098-3efe-9ed2"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Infantry" hidden="false" id="0d44-1102-20fc-f4d7" targetId="6397-ba1e-3f8c-fae9"/>
+        <categoryLink name="Elite" hidden="false" id="4ced-ebc8-f653-287f" targetId="1895-1464-4c34-2f0b"/>
+        <categoryLink name="War Construct" hidden="false" id="ad43-31e8-1a85-f9cc" targetId="fc3d-2ff9-3d65-82df"/>
+        <categoryLink name="Secondary Cards" hidden="false" id="e2a6-f835-3d46-5152" targetId="8383-cdcf-c817-b502">
+          <constraints>
+            <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="38f8-494f-0a75-13a7"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="ff52-61e9-0a46-7291"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Behemoth" hidden="false" id="b4a9-2b82-22ef-a5e4" targetId="d63e-2557-258a-6ae1"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <costTypes>
+    <costType name="Points" id="99b9-8dd9-4075-6346" defaultCostLimit="-1"/>
+  </costTypes>
+  <profileTypes>
+    <profileType name="Unit" id="585a-eefa-6850-0784" hidden="false" kind="model">
+      <characteristicTypes>
+        <characteristicType name="Health" id="1896-8060-6bfe-6075"/>
+        <characteristicType name="M" id="b9ed-1ab5-c35c-cc85"/>
+        <characteristicType name="I" id="1007-2da1-ace7-8422"/>
+        <characteristicType name="E" id="b09c-9be0-e3db-bb1d"/>
+        <characteristicType name="Armor" id="4700-cec3-6b57-4102"/>
+        <characteristicType name="Orders" id="298c-c37d-3cd0-c8c3"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Melee Weapons" id="3d06-6906-ae15-da7d" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="0ead-d6bf-6fdc-2250"/>
+        <characteristicType name="A" id="cf90-6480-ac95-eafe"/>
+        <characteristicType name="S" id="5a55-ccfd-d867-e94b"/>
+        <characteristicType name="D" id="363a-1515-00a2-c70b"/>
+        <characteristicType name="Traits" id="7378-255d-2aae-d9c1"/>
+      </characteristicTypes>
+      <attributeTypes>
+        <attributeType name="Traits" id="7d80-5b15-0144-9956"/>
+      </attributeTypes>
+    </profileType>
+    <profileType name="Ranged Weapons" id="d259-6a61-654a-8ed2" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="ad9d-416e-ad23-ce51"/>
+        <characteristicType name="A" id="4f0e-94ab-b8cc-ca0f"/>
+        <characteristicType name="S" id="6406-8b9b-758e-3aeb"/>
+        <characteristicType name="D" id="f6d0-f8ca-0d05-ab3c"/>
+        <characteristicType name="Traits" id="6bcf-b935-f8fd-59cc"/>
+      </characteristicTypes>
+      <attributeTypes>
+        <attributeType name="Traits" id="fbad-a8f2-3e3d-9b70"/>
+      </attributeTypes>
+    </profileType>
+    <profileType name="Abilities" id="d811-2a62-b61b-ba23" hidden="false">
+      <attributeTypes>
+        <attributeType name="Ability" id="0b60-fa3e-f778-c10b"/>
+      </attributeTypes>
+      <characteristicTypes>
+        <characteristicType name="Ability" id="5ab2-6b72-87f0-6888"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Secondary Cards" id="7b24-8daa-9ff7-6596" hidden="false">
+      <attributeTypes>
+        <attributeType name="Conflict" id="9924-4d97-a04f-2a0d"/>
+        <attributeType name="Conquest" id="0bf8-f911-76b9-a82d"/>
+      </attributeTypes>
+      <characteristicTypes>
+        <characteristicType name="Conflict" id="a2db-9581-af35-be7e"/>
+        <characteristicType name="Conquest" id="f566-81a1-8939-88b8"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <publications>
+    <publication name="Critter Conflicts Core Rules" id="dc00-d754-4c4e-532f" hidden="false" publisher="Critter Conflicts Core Rules" publisherUrl="https://docs.google.com/document/d/1whtGftxz8y6TGNd890TaNQXcI1YNSGLWIxBwBtv7ldA/edit?usp=sharing" publicationDate="1/1/2026"/>
+    <publication name="Bestiary Grand Colonies" id="2216-db5f-9aa1-ac5b" hidden="false" publisher="Bestiary Grand Colonies" publicationDate="1/1/2026" publisherUrl="https://docs.google.com/document/d/1XokNKDFnhcaMEhRcXnnbBRSmJFTVY4g-E3nY01nq9pU/edit?usp=sharing"/>
+    <publication name="Bestiary Mammalian Boroughs" id="9702-3b0e-aef6-5436" hidden="false" publisher="Bestiary Mammalian Boroughs" publisherUrl="https://docs.google.com/document/d/1WBzAWw6MfCZK0JxsL_RRRIWP64qfebuWyazUvIHJhxw/edit?usp=sharing"/>
+    <publication name="Struggle for Stamford Avenue" id="76ec-97d6-d286-49df" hidden="false" publisherUrl="https://docs.google.com/document/d/1gu_6yBI_3O9B8X4dQxhKzmIFE0GqYdvE5x0XSi8MNT4/edit?usp=sharing" publicationDate="1/1/2026" publisher="Struggle for Stamford Avenue Mission Pack"/>
+  </publications>
+  <sharedRules>
+    <rule name="Flurry (x)" id="be5c-ee31-1819-b884" hidden="false" publicationId="dc00-d754-4c4e-532f" page="14">
+      <description>When making an ATTACK Order with this weapon, each unmodified hit of X generates one additional successful hit.</description>
+    </rule>
+    <rule name="Riposte (+x dam)" id="91ae-2a01-e2aa-d841" hidden="false" publicationId="dc00-d754-4c4e-532f">
+      <alias>Riposte</alias>
+    </rule>
+    <rule name="Disposable" id="1a42-8ac5-c965-6898" hidden="false" publicationId="dc00-d754-4c4e-532f" page="14">
+      <description>If each friendly unit within range of enemy Melee weapons has the Disposable keyword, that enemy unit may be the target of shooting attacks, overriding the rule explained in the &quot;Attack Sequence” section. Before you roll any hit rolls for that Attack, select one friendly unit with the Disposable keyword. For each hit roll of 1 (with shooting weapons) that targets the enemy unit for that Attack Order, the selected friendly Disposable unit must make one save roll against that Attack as if they were the target of the Attack Order. Continue with this sequence after all Attacks against the enemy unit are completed.</description>
+    </rule>
+    <rule name="Champion" id="28f6-1ccd-70e4-3816" hidden="false" publicationId="dc00-d754-4c4e-532f" page="14">
+      <description>Champions are individuals who have proven themselves worthy of leading, and have a few rules to show this. A Champion unit cannot be targeted by ranged attacks unless the attacking unit is within 12” unless there are no friendly Infantry or Elite units within 3” of the Champion</description>
+    </rule>
+    <rule name="Evade (-x)" id="b33a-b698-736b-bcf7" hidden="false" publicationId="dc00-d754-4c4e-532f" page="14">
+      <description>When making an ATTACK Order with this weapon, decrease the target defending unit’s EVADE stat by (X) for the duration of that weapon&apos;s attack.</description>
+    </rule>
+    <rule name="Piercing" id="3f34-9009-582f-c130" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>When a save roll is made for an ATTACK Order made by this weapon, decrease the Armour type of the enemy unit by 1 step, to a minimum of Light.</description>
+    </rule>
+    <rule name="Bludgeoning" id="91bf-be2b-66c7-9575" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>When this weapon targets an enemy unit with Medium, Heavy or Super-Heavy armour, increase the damage characteristic by 1</description>
+    </rule>
+    <rule name="Subterranean" id="6335-dcdd-d307-30a2" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>Attacks with Subterranean cannot target units with the Flying keyword</description>
+    </rule>
+    <rule name="Payload" id="f2b0-d217-b0d0-54d2" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>Weapons with the Payload keyword are weapons with multiple profiles, a unit may only Fire with one of its Payload profiles per Attack Order</description>
+    </rule>
+    <rule name="Explosive (x)" id="f4dc-3c04-19d2-8ef0" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>After an ATTACK Order has been made with this weapon, select one unit targeted by that attack. Then, target each unit (friendly and enemy) within 3 inches of that unit and deal x Avoidable damage to each unit</description>
+    </rule>
+    <rule name="Penetrating" id="95fb-df0e-f739-a02e" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>After an ATTACK Order has been made for a unit with this weapon, select one enemy unit within 3” of the unit targeted by the ATTACK Order. That unit takes avoidable damage equal to the weapon’s damage for every model killed by the original ATTACK order.</description>
+    </rule>
+    <rule name="Infestation" id="fd88-b475-0d76-dcd4" hidden="false" publicationId="dc00-d754-4c4e-532f" page="15">
+      <description>After an ATTACK order has been made for a unit with this weapon, target one unit that was dealt damage by the weapon. Models in that unit have -1 Intelligence until the end of the next turn, to a minimum of 0.</description>
+    </rule>
+    <rule name="Fire [Active] [Complexity 2]" id="efea-a772-9c17-7e95" hidden="false" publicationId="dc00-d754-4c4e-532f" page="16">
+      <description>Your unit takes 1d4 avoidable damage. However, if they roll a 8 on that roll, select the closest friendly unit within 6”, that unit gains a Fire token. For each additional token on a unit, add 1 to the d4 roll.</description>
+    </rule>
+    <rule name="Poison [Active] [Complexity 2]" id="0463-8983-1b78-48c1" hidden="false">
+      <description>Your unit takes 1d4 unavoidable damage. This damage can only kill one model for every activation of Poison. For each additional token, add 1 to the d4 roll.</description>
+    </rule>
+    <rule name="Stun [Passive] [Complexity 3]" id="d5b9-45c1-d256-547e" hidden="false" publicationId="dc00-d754-4c4e-532f" page="17">
+      <description>For every Stun Effect Token on a unit, they receive -1 to their Move characteristic, to a minimum of 1.</description>
+    </rule>
+    <rule name="Webbed [Passive] [Complexity 1]" id="2e4f-5c5a-90e7-5a76" hidden="false" publicationId="dc00-d754-4c4e-532f" page="17">
+      <description>For every Webbed Effect Token on a unit, they receive -1 to their Evade characteristic, to a minimum of 1.</description>
+    </rule>
+    <rule name="Weakness [Passive] [Complexity 2]" id="a23b-a381-c324-39da" hidden="false" publicationId="dc00-d754-4c4e-532f" page="17">
+      <description>When a unit is inflicted with Weakness, they receive a -1 to skill for each Effect Token they are inflicted with.</description>
+    </rule>
+    <rule name="Fear [Passive] [Complexity 2]" id="2548-9c52-eaf3-9f1e" hidden="false" publicationId="dc00-d754-4c4e-532f" page="17">
+      <description>Units that have a Fear token cannot gain the benefit of Cover.</description>
+    </rule>
+    <rule name="Single Use" id="04e4-783c-2768-1a13" hidden="false">
+      <description>A Single Use weapon can only be fired once per battle for every model that has it.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Medical Support" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="307a-f0d2-86f7-d10a" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Order Phase) Target a friendly unit outside of Enemy Territory. Heal that unit 1d4 wounds.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if more than half of all friendly units are above half strength</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Order Phase) Target a friendly unit outside of Enemy Territory. Heal that unit 1d4 wounds.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if more than half of all friendly units are above half strength</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lines of Communication" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="d710-2d67-eac5-94b6" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Order Phase) Target a friendly Champion unit outside of melee range of enemy weapons. Each friendly unit within 3&quot; of that champion gains +1 Order</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1VP if you have at least one Champion in friendly territory and one Champion in enemy territory.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Order Phase) Target a friendly Champion unit outside of melee range of enemy weapons. Each friendly unit within 3&quot; of that champion gains +1 Order</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if you have at least one Champion in friendly territory and one Champion in enemy territory.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Counter Charge" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="ee77-3b12-7ee0-3de5">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Position Phase) Target a friendly unit. That unit can make a free Charge Order against an enemy unit that has made a Charge Order this turn.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1VP if a friendly unit that used a Charge Order this turn also destroyed an enemy unit this turn.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Position Phase) Target a friendly unit. That unit can make a free Charge Order against an enemy unit that has made a Charge Order this turn.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly unit that used a Charge Order this turn also destroyed an enemy unit this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reinforcements" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="22e0-8b37-a642-99f7" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Order Phase) At the end of the phase, set up an Infantry unit that has been previously destroyed at half strength in your deployment zone. This unit must be deployed outside of 6&quot; of all enemy units.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1VP if a unit that started the turn in your deployment zone destroys an enemy unit outside of your deployment zone</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Order Phase) At the end of the phase, set up an Infantry unit that has been previously destroyed at half strength in your deployment zone. This unit must be deployed outside of 6&quot; of all enemy units.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a unit that started the turn in your deployment zone destroys an enemy unit outside of your deployment zone</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Over The Top" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="b5d7-e66f-c74c-750d" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Positioning Phase) Target two friendly units and then roll 1d4. Both units increase their Move characteristic by that value for the rest of the turn.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if you have more friendly units in neutral territory than there are enemy units in neutral territory</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Positioning Phase) Target two friendly units and then roll 1d4. Both units increase their Move characteristic by that value for the rest of the turn.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if you have more friendly units in neutral territory than there are enemy units in neutral territory</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fortify Positions" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="b0a3-0434-a769-cf28" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Positioning Phase) Target one Core Terrain piece outside of enemy territory. Friendly units gain Full Cover at that terrain piece for the rest of the turn, so long as one model in that unit remains within 1&quot;</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if you have any models within 1&quot; of either all Heavy Terrain or Light Terrain pieces.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Positioning Phase) Target one Core Terrain piece outside of enemy territory. Friendly units gain Full Cover at that terrain piece for the rest of the turn, so long as one model in that unit remains within 1&quot;</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if you have any models within 1&quot; of either all Heavy Terrain or Light Terrain pieces.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="High Ground" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="b4f5-c180-faf4-dba1" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Positioning Phase) While outside of Friendly Territory, all friendly units ignore vertical distance while climbing.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if at least two friendly units are on top of Core Terrain outside of friendly territory.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Positioning Phase) While outside of Friendly Territory, all friendly units ignore vertical distance while climbing.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if at least two friendly units are on top of Core Terrain outside of friendly territory.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Trench Assault" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="8a94-de33-74af-7b07" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Engage Phase) Target a friendly unit within range of enemy Melee weapons. Models on that unit gain Flurry (7+) on all melee weapons while they are inside of a Battlescene terrain piece.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if you control a Battlescene Terrain piece outside of friendly territory.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit within range of enemy Melee weapons. Models on that unit gain Flurry (7+) on all melee weapons while they are inside of a Battlescene terrain piece.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if you control a Battlescene Terrain piece outside of friendly territory.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Final Push" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="1190-89d1-8557-65d7" publicationId="76ec-97d6-d286-49df" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Engage Phase) Target a friendly unit. That unit gains Stun on all attacks while outside of friendly territory.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1 VP if a unit is within enemy territory and has destroyed an enemy unit this turn.</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit. That unit gains Stun on all attacks while outside of friendly territory.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1 VP if a unit is within enemy territory and has destroyed an enemy unit this turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Defend Front Lines" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="4f60-f0c1-7b20-2aae" publicationId="dc00-d754-4c4e-532f" page="4">
+      <attributes>
+        <attribute name="Conflict" typeId="9924-4d97-a04f-2a0d">(Engage Phase) Target a friendly unit not within range of enemy Melee weapons. Models in that unit gain Flurry (7+) on all shooting weapons while they are inside of a Battlescene Terrain piece.</attribute>
+        <attribute name="Conquest" typeId="0bf8-f911-76b9-a82d">Gain 1VP if you control any Battlescene Terrain piece</attribute>
+      </attributes>
+      <characteristics>
+        <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit not within range of enemy Melee weapons. Models in that unit gain Flurry (7+) on all shooting weapons while they are inside of a Battlescene Terrain piece.</characteristic>
+        <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if you control any Battlescene Terrain piece</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Counter Charge" hidden="false" id="4298-2103-3627-d84d">
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="5f05-2206-5964-01ae" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Counter Charge" id="3ed1-80ad-3af3-0c5d" hidden="false" type="profile" targetId="ee77-3b12-7ee0-3de5"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88f-9073-90d8-acb1"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Defend Front Lines" hidden="false" id="b333-98c8-5181-47e7">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="4795-1ae0-7b95-dfc5" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Defend Front Lines" id="b555-64ec-77a1-d003" hidden="false" type="profile" targetId="4f60-f0c1-7b20-2aae"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90a3-36c5-3099-1910"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Final Push" hidden="false" id="532a-d365-36d5-56ca">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8a2-916c-8ddf-53ad"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Final Push" id="0131-dfce-afa6-6794" hidden="false" type="profile" targetId="1190-89d1-8557-65d7"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="fd1e-a7dd-13f2-51c8" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fortify Positions" hidden="false" id="a918-b792-89b8-4f57">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d15b-65f2-6cf5-571d"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fortify Positions" id="182d-e7eb-270c-2773" hidden="false" type="profile" targetId="b0a3-0434-a769-cf28"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="b54c-851b-dc7e-9cb6" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="High Ground" hidden="false" id="1e77-9a41-e130-24bd">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5ff-27b0-7b3b-b421"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="High Ground" id="7742-5a7c-6446-ce74" hidden="false" type="profile" targetId="b4f5-c180-faf4-dba1"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="ef01-034d-82d8-4ffc" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lines of Communication" hidden="false" id="7ca5-5fdc-dae6-2aac">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b1e-b3ad-155b-3563"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Lines of Communication" id="0370-ea99-d40f-7138" hidden="false" type="profile" targetId="d710-2d67-eac5-94b6"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="62a7-1eb0-791b-7ec0" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medical Support" hidden="false" id="af1c-d5db-f5e9-9452">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ea9-e2a9-0224-2aa9"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Medical Support" id="c5ba-0683-f2d6-f65d" hidden="false" type="profile" targetId="307a-f0d2-86f7-d10a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="ff09-59e8-8cfc-a6f7" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Over the Top" hidden="false" id="0378-65b1-d540-9550">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd58-c7ce-a13c-2941"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Over The Top" id="4e7d-6ebd-c922-606e" hidden="false" type="profile" targetId="b5d7-e66f-c74c-750d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="e923-eab1-5212-4ce8" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reinforcements" hidden="false" id="f18e-4154-59a7-bd0d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db7-6e60-fd00-f1df"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Reinforcements" id="0115-cef5-fb0e-f2ce" hidden="false" type="profile" targetId="22e0-8b37-a642-99f7"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="41f3-9bb0-6af1-1bcb" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trench Assault" hidden="false" id="0bb0-faf9-9011-511e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8af-5a44-3a87-a861"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Trench Assault" id="99ec-39bc-f3fa-c548" hidden="false" type="profile" targetId="8a94-de33-74af-7b07"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Secondary Cards" hidden="false" id="02a5-d979-0935-f1fc" targetId="8383-cdcf-c817-b502" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Counter Charge" hidden="false" id="1163-546f-8138-83ae" targetId="4298-2103-3627-d84d" type="selectionEntry"/>
+    <entryLink import="true" name="Defend Front Lines" hidden="false" id="c848-f527-0ff2-ac28" targetId="b333-98c8-5181-47e7" type="selectionEntry"/>
+    <entryLink import="true" name="Final Push" hidden="false" id="23cb-844d-cf63-97d5" targetId="532a-d365-36d5-56ca" type="selectionEntry"/>
+    <entryLink import="true" name="Fortify Positions" hidden="false" id="4af1-d701-bca0-74f0" targetId="a918-b792-89b8-4f57" type="selectionEntry"/>
+    <entryLink import="true" name="High Ground" hidden="false" id="951a-341a-e413-80de" targetId="1e77-9a41-e130-24bd" type="selectionEntry"/>
+    <entryLink import="true" name="Lines of Communication" hidden="false" id="d71c-5402-f98f-fd50" targetId="7ca5-5fdc-dae6-2aac" type="selectionEntry"/>
+    <entryLink import="true" name="Medical Support" hidden="false" id="bd52-39ed-2f44-50c8" targetId="af1c-d5db-f5e9-9452" type="selectionEntry"/>
+    <entryLink import="true" name="Over the Top" hidden="false" id="fb01-d2e0-276d-8808" targetId="0378-65b1-d540-9550" type="selectionEntry"/>
+    <entryLink import="true" name="Reinforcements" hidden="false" id="46bf-e8d1-dda6-eb52" targetId="f18e-4154-59a7-bd0d" type="selectionEntry"/>
+    <entryLink import="true" name="Trench Assault" hidden="false" id="2cec-a8fc-26e6-2434" targetId="0bb0-faf9-9011-511e" type="selectionEntry"/>
+  </entryLinks>
+</gameSystem>
