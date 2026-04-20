@@ -1,0 +1,1985 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="3761-f5ce-6520-63dc" name="Mammalian Boroughs" gameSystemId="sys-ad02-df11-d968-f97a" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Bunny Thegn" hidden="false" id="d217-ebfa-9207-5c65">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="115"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9390-bf39-3d27-bbc1" id="b604-f795-500d-0158" primary="true" name="Champion"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="693f-c3d6-ceda-63b7" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="12ff-967b-8c5a-1de0" id="d760-4ce0-ed48-dd63" primary="false" name="Bunny"/>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="e185-f074-9892-2f38" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Target Sighted" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="c58e-3a50-4dea-08df">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">After this unit has declared an Attack Order, pick one enemy unit targeted by that order, that unit gains -1 evade for the rest of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="On Your Feet" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="1480-1960-ae83-9bc2">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Order Phase): Pick one friendly unit within 6&quot; of this model, return up to 1d4 lost wounds to that unit. If there were spare wounds not allocated (because the unit was at max health), also give that unit +1 order</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bunny Thegn" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="2913-3674-aa3a-42ef">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">7</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">6&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">4</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bunny Thegn" hidden="false" id="6757-0081-1fc2-a59a">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="e943-5b4a-a3fe-2ff6" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Conker Basher" hidden="false" id="3701-f76a-ba78-18c5">
+                  <profiles>
+                    <profile name="Conker Basher" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="f036-a993-9623-db07">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Bludgeoning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Bludgeoning" id="9af5-8acc-478c-06ab" hidden="false" type="rule" targetId="91bf-be2b-66c7-9575"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Leaf Zweihander" hidden="false" id="dd99-974c-e7f5-14da">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Leaf Zweihander" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="c182-6fa6-6f6d-fbad">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">2&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">6</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="5ccd-cc4d-8194-5b3b" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3eb-7d81-a4d6-edf7-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3eb-7d81-a4d6-edf7-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="89b6-4101-ad95-970e" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Stump Sidearm" hidden="false" id="15ff-0a77-735c-506f" sortIndex="1">
+                  <profiles>
+                    <profile name="Stump Sidearm" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="57fb-adce-41d8-261f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">12&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Flurry (7+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Flurry (x)" id="fc1a-db91-44c7-ad94" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stump Rifle" hidden="false" id="694f-8a37-e969-7a77">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Stump Rifle" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="f81b-3674-b57d-50a0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">18&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">3</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="2626-ddbd-b24e-c0ba" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c28-5ba2-2498-8d4c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c28-5ba2-2498-8d4c-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6853-f3a3-3679-551e-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6853-f3a3-3679-551e-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Unique Traits" hidden="false" id="759d-36fd-8da6-59e7" type="selectionEntryGroup" targetId="b894-00a4-c659-ee85"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rodent Field Surgeon" hidden="false" id="9f5c-4954-883d-41dc">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="105"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9390-bf39-3d27-bbc1" id="1ff3-8ae8-4003-7763" primary="true" name="Champion"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="8e15-9c53-ff7f-5976" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="55e9-a56f-ed47-a210" id="3dc3-7985-015c-390b" primary="false" name="Rodent"/>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="7a00-8732-a7a2-803e" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Temporary Hospital" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="4404-176e-7e4f-6e1e">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">While this unit is within cover, friendly units within 6&quot; ignore the first point of damage dealt to them during the Engage Phase</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Terrifying Concoction" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="a966-d940-8fc0-5890">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Before attacking with a Needle weapon, roll a D4, with a random effect based on the result. 1. Poison 2. Fire 3. Weakness 4. Fear</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rodent Field Surgeon" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="ee66-2767-1c0f-8325">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">6</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">7&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">7</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Light</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Field transplant [1]" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="c59a-95b5-9cbb-d97d">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Positioning Phase): Target a friendly unit within 6&quot; and roll a d6. If you do roll above that units Evade stat, heal that unit d4+1 OR take an Effect Token away from that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rodent Field Surgeon" hidden="false" id="00f6-1b85-b4b0-8daf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9811-120d-cf9b-0e23-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9811-120d-cf9b-0e23-max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="423b-bb96-4a00-fa3c" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bone Saw" hidden="false" id="be8b-f430-e79b-b80a">
+                  <profiles>
+                    <profile name="Bone Saw" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="a861-05db-ea7f-ad98">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Fear</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9466-e71c-fd2a-d52c-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9466-e71c-fd2a-d52c-max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Fear [Passive] [Complexity 2]" id="a351-0669-ea9a-e48f" hidden="false" type="rule" targetId="2548-9c52-eaf3-9f1e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Needle Stiletto" hidden="false" id="758e-71f5-fea2-9e39">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d78-a7b0-1350-c156"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Needle Stiletto" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="6c60-ffbc-5709-f7ae">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">1</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Needle</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a1c-97a9-c6ea-ef27"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="749d-1a31-45dd-e95d" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Needle Crossbow" hidden="false" id="ec9d-cad6-ef3e-c53a">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Needle Crossbow" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="d36e-91b1-1e2f-c2c8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">10&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1d4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">3</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Needle</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa01-4924-26d0-5b02"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Keyword Choice" id="f0c7-a914-f6b9-e9f1" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rat" hidden="false" id="a56a-616f-1319-3f5b">
+                  <profiles>
+                    <profile name="Rat" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="8618-97c4-7d8b-ba37">
+                      <characteristics>
+                        <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">This unit has the Rat keyword</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mouse" hidden="false" id="2cf8-4d5a-eb75-24b0">
+                  <profiles>
+                    <profile name="Mouse" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="5ff2-15ce-18a3-768e">
+                      <characteristics>
+                        <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">This unit has the Mouse keyword</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43d8-9712-92c5-ef38-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43d8-9712-92c5-ef38-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Unique Traits" hidden="false" id="cdb3-cca4-cace-4d6e" type="selectionEntryGroup" targetId="b894-00a4-c659-ee85"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Foxjaeger" hidden="false" id="c6b6-bb23-d2b2-17af">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7cdc-11fd-ee3d-709c" id="7b7e-6ec8-af29-6bb2" primary="true" name="Veteran Hero"/>
+        <categoryLink targetId="9390-bf39-3d27-bbc1" id="366d-b635-f98c-440b" primary="false" name="Champion"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="dda8-3f47-e5ba-a986" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="1895-1464-4c34-2f0b" id="f27d-ee7b-9311-eba2" primary="false" name="Elite"/>
+        <categoryLink targetId="b778-c018-32ab-16ee" id="8a94-fbde-f30e-9d47" primary="false" name="Fox"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Foxjaeger" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="27ba-cd4a-5739-2783">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">9</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">7&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">4</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">6</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shadow Deployment" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="a522-fddd-2e43-adf3">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Instead of Deploying this unit, you may place up to 3 &apos;Shadow&apos; tokens on the Battlefield 9&quot; outside of your opponent&apos;s deployment zone. Those Tokens are removed from the battlefield if an enemy model comes in contact with one of them.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hero&apos;s Bane [1]" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="94bf-44a1-2170-d998">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Order Phase): Choose a Champion model within line of sight and 6&quot; of this unit. All attacks made by this Foxjaeger unit gain the &quot;Champion +1 Damage&quot; trait.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ambush" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="98fa-de17-b701-ac0b">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">During your Positioning Phase, you may set up the Foxjaeger within base contact of one of the available &apos;Shadow&apos; tokens. The Foxjaeger then gains x+2 Order Tokens, where X is the amount of Shadow Tokens removed from play during the battle</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Foxjaeger" hidden="false" id="b906-ffb8-80ec-c723">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="9447-868f-347d-3e2d" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Fanged Blades" hidden="false" id="080e-ecfa-e3bb-b72b">
+                  <profiles>
+                    <profile name="Fanged Blades" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="6701-13a4-476b-8c66">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Flurry (7+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Flurry (x)" id="2710-fbde-092c-290b" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c9b-26e8-7d4f-b9c5-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c9b-26e8-7d4f-b9c5-max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Backstab" hidden="false" id="565f-7048-62ae-ba30">
+                  <profiles>
+                    <profile name="Backstab" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="0727-daff-9546-856b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ddc-5726-97e0-0513-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ddc-5726-97e0-0513-max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="e3a5-42bf-21eb-4364" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="15df-1bba-19ad-ee8a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Throwing Fangs" hidden="false" id="dfa1-85ad-d811-c05d">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Throwing Fangs" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="1fb1-9e15-92d4-cd99">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">1&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">3</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">3</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Flurry (7+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="6ab6-5071-c4a1-c905" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Thump Gun" hidden="false" id="5e6f-9fdb-b027-498d">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Thump Gun" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="cdd5-8b63-e412-2d33">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">12&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">3</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Evade -1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Evade (-x)" id="efff-7ab0-e6ad-1166" hidden="false" type="rule" targetId="b33a-b698-736b-bcf7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3002-c799-f377-7edc"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c97-e83d-077b-3b13-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c97-e83d-077b-3b13-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Unique Traits" hidden="false" id="c2df-96a5-96c1-4954" type="selectionEntryGroup" targetId="b894-00a4-c659-ee85"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hoppers" hidden="false" id="c395-bbba-6371-1d13">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="c26f-c4b7-00c0-5687" primary="true" name="Infantry"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="0a2c-dbdb-d59e-b8fd" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="c4da-2812-c7e8-c8e6" id="e1fa-6395-bc06-bb06" primary="false" name="Disposable"/>
+        <categoryLink targetId="12ff-967b-8c5a-1de0" id="8d3c-5170-5ff4-ce94" primary="false" name="Bunny"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Hoppers" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="d09c-d01e-a38b-fa07">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">1</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">6&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">1</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Light</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Thick Fur" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="2d53-f90d-6182-0979">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Whenever this unit is under the effect of RABIES, models in this unit have Medium armor instead of Light armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hopper" hidden="false" id="27f6-5495-ff69-ae0f">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ff16-4b29-c0e6-9f6a-min"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ff16-4b29-c0e6-9f6a-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="3a99-7f36-7f36-fc99" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bunny Spear" hidden="false" id="1a6f-3bc3-4390-ccc1">
+              <profiles>
+                <profile name="Bunny Spear" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="3952-dd97-a5f6-9aa6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">2&quot;</characteristic>
+                    <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                    <characteristic name="S" typeId="5a55-ccfd-d867-e94b">3</characteristic>
+                    <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                    <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Riposte (+1 dam)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Riposte (+x dam)" id="007e-3f79-6217-4847" hidden="false" type="rule" targetId="91ae-2a01-e2aa-d841"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="832a-b965-c4de-4070"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bunny Bow" hidden="false" id="a2b3-eb1b-3b85-24ab">
+              <profiles>
+                <profile name="Bunny Bow" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="b08c-09f7-f648-cfd4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">12&quot;</characteristic>
+                    <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1</characteristic>
+                    <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                    <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1</characteristic>
+                    <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc"/>
+                  </characteristics>
+                </profile>
+                <profile name="Unarmed" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="7270-361b-445b-88a4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1</characteristic>
+                    <characteristic name="A" typeId="cf90-6480-ac95-eafe">1</characteristic>
+                    <characteristic name="S" typeId="5a55-ccfd-d867-e94b">1</characteristic>
+                    <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                    <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="99b9-8dd9-4075-6346" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5565-704d-6059-ba4e"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stump Gun" hidden="false" id="6f36-2279-72b6-2a6b">
+              <profiles>
+                <profile name="Stump Gun" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="6096-cc26-ec36-5c54">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">13&quot;</characteristic>
+                    <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                    <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                    <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                    <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Unarmed" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="d1f2-d396-9ff9-261e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1</characteristic>
+                    <characteristic name="A" typeId="cf90-6480-ac95-eafe">1</characteristic>
+                    <characteristic name="S" typeId="5a55-ccfd-d867-e94b">1</characteristic>
+                    <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                    <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Stun [Passive] [Complexity 3]" id="a74d-3bb2-9d74-c5cf" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="99b9-8dd9-4075-6346" value="12"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="a93e-138c-72a4-52ed" shared="true" id="bcda-351c-2620-ca3c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="59e2-7cc6-0f15-3ac5"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bunny Veteran Team" hidden="false" id="49c0-51e4-2b6f-f82e">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="130"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="cf3d-d00f-1d78-c324" primary="true" name="Infantry"/>
+        <categoryLink targetId="19e7-ad37-af4a-fc4f" id="2395-2268-0b28-95e6" primary="false" name="Grand Colonies"/>
+        <categoryLink targetId="12ff-967b-8c5a-1de0" id="7c7a-b322-1271-b1a9" primary="false" name="Bunny"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bunny Veteran Team" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="34f9-4d73-b4b0-2283">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">6</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">4&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">4</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cannon Fodder" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="b353-e255-2d44-e1f6">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">After this unit has completed an Attack Order, select one enemy unit Infantry that was the target of this unit&apos;s shooting weapons. If this unit killed any models in the enemy unit, that unit cannot gain the benefits of cover for the rest of the Engage Phase</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bunny Veteran Team" hidden="false" id="221c-5494-20f0-2588">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="5425-afb0-5206-65ec" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Crew Knives" hidden="false" id="fe11-355b-0683-f52b">
+                  <profiles>
+                    <profile name="Crew Knives" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="203e-aa2c-3e67-f3e8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1bf-94de-44b8-763e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1bf-94de-44b8-763e-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="045e-0872-79b5-fed1" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Spine Ballista" hidden="false" id="2026-39a8-073b-76cd">
+                  <profiles>
+                    <profile name="Spine Ballista" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="9205-7c10-5c77-622b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">20&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">4</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="e8bc-b1d5-d8dc-d96c" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stump Mortar" hidden="false" id="eceb-c9a9-9077-0725">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Stump Mortar" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="53b8-08b6-dfd3-077c">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">18&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1d4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="834a-e0a7-ac1c-7221" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stump Cannon" hidden="false" id="8e2c-c6de-64e9-f3a9">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Stump Cannon" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="31de-e61c-b17c-fb69">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">14&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1d4+4</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Fear</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Fear [Passive] [Complexity 2]" id="7520-524f-de3a-1856" hidden="false" type="rule" targetId="2548-9c52-eaf3-9f1e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b187-3c05-b7c1-b490-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b187-3c05-b7c1-b490-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c3a7-ee17-c479-f5b1-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c3a7-ee17-c479-f5b1-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Bunny Veteran Team Reinforcements" hidden="false" id="5960-07f4-6913-332b">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="65"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5e-4eb5-5943-030b"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="7762-df6c-0627-68d8" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Crew Knives" hidden="false" id="a9ea-2ccc-fa23-c71d">
+                  <profiles>
+                    <profile name="Crew Knives" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="184a-fc36-e85c-44d0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3d0-12bd-08e2-457d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d0-12bd-08e2-457d-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="7e29-7659-6413-2c95" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Spine Ballista" hidden="false" id="e1c4-b6b1-be6d-0179">
+                  <profiles>
+                    <profile name="Spine Ballista" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="5ed5-f5f2-5a55-daa4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">20&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">4</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="e9de-376e-eafc-cb9c" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stump Mortar" hidden="false" id="79f5-6d14-9eac-f046">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Stump Mortar" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="4caa-f477-28ce-85d4">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">18&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1d4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="f684-08b1-7651-b533" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Stump Cannon" hidden="false" id="1d9e-b27b-eb49-308d">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Stump Cannon" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="96ee-fc90-eccc-3c52">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">14&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1d4+4</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Fear</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Fear [Passive] [Complexity 2]" id="693c-90ad-37ac-e5e8" hidden="false" type="rule" targetId="2548-9c52-eaf3-9f1e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20e0-ae9f-e846-2215-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20e0-ae9f-e846-2215-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hare Huscarls" hidden="false" id="90a2-d4d5-db14-d249">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="160"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1895-1464-4c34-2f0b" id="25e2-05c9-4d61-04d2" primary="true" name="Elite"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="9891-0b49-a2fe-0e17" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="718e-5798-a92a-d971" id="9b10-68c0-1451-55f2" primary="false" name="Hare"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Hare Huscarls" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="961f-adeb-da21-47dc">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">4</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">7&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">2</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">3</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shields Down [2]" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="9037-13a5-d712-2e9a">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Positioning Phase): Reduce this unit&apos;s movement by half. In addition, increase this unit&apos;s EVADE stat to 5 and Armour to Heavy for this turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="c8fd-9c52-fb9f-1c07" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="7953-7ef2-0e60-70c9" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Conker Mallet" hidden="false" id="7e0f-6cdd-d998-80db">
+                  <profiles>
+                    <profile name="Conker Mallet" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="8d1b-ee9c-9d60-e7c3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Bludgeoning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Bludgeoning" id="280d-9118-f84b-9419" hidden="false" type="rule" targetId="91bf-be2b-66c7-9575"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Great Conker" hidden="false" id="ef54-7f59-ecbe-db97">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Great Conker" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="ac5b-0cc3-3aa6-1eee">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">2&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Bludgeoning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad2b-6291-30e1-13cd"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Bludgeoning" id="57d4-8d21-b71b-55f9" hidden="false" type="rule" targetId="91bf-be2b-66c7-9575"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="5636-6964-4435-c01c" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Stump-Gun" hidden="false" id="8b03-dca8-7ccc-9070">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="5"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Heavy Stump-Gun" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="156d-9fb3-d9af-c4c8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">14&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unarmed" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="a479-bdd1-abe2-9763">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="7936-17a7-e5ee-3d69" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Great Stumper" hidden="false" id="1ccc-f712-e332-f476">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddfc-97ed-a501-bee9"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Great Stumper" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="be05-afde-1955-7d84">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">14&apos;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1D4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">4</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unarmed" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="28ef-0365-9d02-3914">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="8ae3-52cd-d0cc-07b8" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7468-60c8-c30f-82ed"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a125-b315-5813-3e74"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hare Huscarl" hidden="false" id="5768-bc04-dd29-71d0">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e733-e1e4-6522-5451-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e733-e1e4-6522-5451-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hare Huscarls Reinforcemnents" hidden="false" id="8b8a-a2e6-8dd6-074c">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c92c-b086-7f69-2c86"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mole Tunnelers" hidden="false" id="eeb2-6499-fe96-a0e7">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="130"/>
+      </costs>
+      <profiles>
+        <profile name="Mole Tunnelers" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="8b11-c9ed-f526-7ee8">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">5</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">5&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">2</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">3</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Subterranean Assault [2]" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="84ae-78c0-5b71-4cfb">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Positioning Phase): This unit can be set up anywhere on the Battlefield up to 18&quot; away from its current position. Before doing so, place a token in base contact to one of the models in this unit. After this unit has moved in this manner, place a second token in base contact with the unit. Then, draw a straight line connecting both tokens. For each enemy unit that line crosses, complete a free Attack Order against that unit with ONE of this unit&apos;s Seed Mines for every two models in this unit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mole Tunneler" hidden="false" id="a12c-a437-47bb-677a">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="c388-d933-a0b8-bd41" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="3be4-ebb4-46ef-dba3">
+                  <profiles>
+                    <profile name="Claws (Pierce)" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="24e4-bd6d-ae0d-94b8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Piercing, Payload</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Claws (Sweep)" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="a2be-00d1-1018-b672">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">6</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">3</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Flurry (7+), Payload</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="614c-559f-10f7-297e" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                    <infoLink name="Flurry (x)" id="09ff-d986-a2f4-8e63" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                    <infoLink name="Payload" id="97d3-2798-6bd9-05d9" hidden="false" type="rule" targetId="f2b0-d217-b0d0-54d2"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edc0-4e48-a52d-0589-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edc0-4e48-a52d-0589-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="9823-d80a-c8c9-145c" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Seed Mines" hidden="false" id="b404-5d6b-7d13-8523">
+                  <profiles>
+                    <profile name="Seed Mines" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="7d0b-2618-17ea-b611">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">4&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1d4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">3</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun, Subterranean</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="ba2d-c68e-63e0-e89e" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                    <infoLink name="Subterranean" id="db55-dd65-66ab-1330" hidden="false" type="rule" targetId="6335-dcdd-d307-30a2"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47d5-7884-fc1c-f002-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47d5-7884-fc1c-f002-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ffc4-497f-a5bf-6f7f-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ffc4-497f-a5bf-6f7f-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mole Tunneler Reinforcements" hidden="false" id="1470-6ef8-a608-051e">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="55"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1022-34ea-6c3a-cef1"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="d4aa-a246-6e50-0f5b" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="ba4f-d46a-d068-447a">
+                  <profiles>
+                    <profile name="Claws (Pierce)" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="7d88-c963-9a22-55fe">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Piercing, Payload</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Claws (Sweep)" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="0cba-2bfa-95b7-b10a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">6</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">3</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Flurry (7+), Payload</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="f5a1-ce51-c477-a44f" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                    <infoLink name="Flurry (x)" id="dbba-abe2-e1a2-df9d" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                    <infoLink name="Payload" id="b82b-90b2-f241-4624" hidden="false" type="rule" targetId="f2b0-d217-b0d0-54d2"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8141-3814-c511-4025-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8141-3814-c511-4025-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="d7ae-ef8c-fbae-dc73" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Seed Mines" hidden="false" id="ade9-b3d6-62ab-60e1">
+                  <profiles>
+                    <profile name="Seed Mines" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="d07b-33db-a096-1ac3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">4&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1d4</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">3</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Stun, Subterranean</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Stun [Passive] [Complexity 3]" id="1824-ae14-9e9e-453f" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+                    <infoLink name="Subterranean" id="734c-853c-c436-8f5e" hidden="false" type="rule" targetId="6335-dcdd-d307-30a2"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11f5-303a-9a50-34ac-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f5-303a-9a50-34ac-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="1895-1464-4c34-2f0b" id="d403-1855-f58b-2d05" primary="true" name="Elite"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="fee9-eb2f-53cc-59a4" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="8897-c904-3a26-6a5a" id="d9a9-1581-5c1b-38b6" primary="false" name="Mole"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nox Interrogator" hidden="false" id="f3bf-5e8a-8410-5f9b">
+      <profiles>
+        <profile name="Nox Interrogator" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="0e2c-7ca3-bf8d-0433">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">8</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">9&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">5</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">5</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Light</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shadow of the Council [1]" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="fcae-15a2-4e79-e413">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Positioning Phase): Target one friendly Mammalian Borough unit within 12&quot;, that unit gains a Fear Effect Token</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Terrifying Presence" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="072f-5d99-3ff8-a025">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">While a friendly unit with a Fear Effect Token is within 12&quot; of a Nox Interrogator, gain +1 Attack characteristic to all weapons equipped by that unit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="125"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9390-bf39-3d27-bbc1" id="37b0-beae-d4bd-d18a" primary="true" name="Champion"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="37b0-1f4a-57f7-69f6" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="1895-1464-4c34-2f0b" id="956c-0aa0-e44c-c9a9" primary="false" name="Elite"/>
+        <categoryLink targetId="50e1-a473-72ff-8c3a" id="5784-c2de-c3f1-eba0" primary="false" name="Fly"/>
+        <categoryLink targetId="b64e-9bed-b3a5-7f59" id="b16f-b453-e405-fcf3" primary="false" name="Bat"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nox Interrogator" hidden="false" id="0cf7-7ba9-f5cf-1a55">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="2bbe-757d-2b57-3533" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bramble Sabre" hidden="false" id="2c23-3aa0-4d4c-d66c">
+                  <profiles>
+                    <profile name="Bramble Sabre" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="3f9b-c59f-1fd7-198f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Poison (4+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea65-d011-9d44-3bbf"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Poison [Active] [Complexity 2]" id="1de8-6b65-fdb5-b8fb" hidden="false" type="rule" targetId="0463-8983-1b78-48c1"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dual Hand Quillbows" hidden="false" id="9789-450f-facd-b893">
+                  <profiles>
+                    <profile name="Dual Hand Quillbow" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="51bd-7d6f-e3f0-de25">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">3&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Flurry (7+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Flurry (x)" id="1f46-732b-5fc0-ed8c" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="754a-2d2d-3067-3275-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="754a-2d2d-3067-3275-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="adff-156d-e23d-78fe" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Silenced Stumper" hidden="false" id="bba4-454e-179c-6196" sortIndex="1">
+                  <profiles>
+                    <profile name="Silenced Stumper" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="d202-71f4-6466-1baf">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">9&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">3</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Weakness (5+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Weakness [Passive] [Complexity 2]" id="3643-8bf4-9a5f-31cf" hidden="false" type="rule" targetId="a23b-a381-c324-39da"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Dual Hand Quillbows" hidden="false" id="9ee7-5f1e-3f19-534c">
+                  <profiles>
+                    <profile name="Dual Hand Quillbows" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="3cc1-89c6-5780-484b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">8&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">3</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Flurry (7+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Flurry (x)" id="a161-07c4-5a30-6b2c" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c23d-64dc-7a25-54b3-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c23d-64dc-7a25-54b3-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4972-6349-e1f5-fded-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4972-6349-e1f5-fded-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Unique Traits" hidden="false" id="09ed-92b6-c1c5-7128" type="selectionEntryGroup" targetId="b894-00a4-c659-ee85"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hedgehog Quillbowmen" hidden="false" id="5493-93bc-6974-d6eb">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="150"/>
+      </costs>
+      <profiles>
+        <profile name="Hedgehog Quillbowmen" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="e9a2-fe7e-3d8a-1fcc">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">2</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">5&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">2</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Light</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pin Them Down" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="5c4a-46da-5865-ad55">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">If an enemy unit takes damage from the Penetrating unique trait by attacks made from this unit, that enemy unit gains a Fear Effect Token if any models were slain by that damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spear Hide" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="0012-d834-bc71-899e">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">When this unit deals damage through Riposte, that damage is Unavoidable.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hedgehog Quillbowman" hidden="false" id="6438-44a8-d2cb-26b8">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7abd-72d7-4194-7115-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7abd-72d7-4194-7115-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hedgehog Quillbowmen Reinforcements" hidden="false" id="9ef5-4249-6f9d-fb6a">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="179f-d998-7e11-9fc4"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="aeca-c9f6-9ff1-463c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Quillbow" hidden="false" id="eda3-c0f1-2e9c-ceb5" sortIndex="1">
+              <profiles>
+                <profile name="Heavy Quillbow" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="ccf0-e7b2-5353-67a6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">18&quot;</characteristic>
+                    <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">1</characteristic>
+                    <characteristic name="S" typeId="6406-8b9b-758e-3aeb">6</characteristic>
+                    <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                    <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Penetrating</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Unarmed" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="a377-269b-5910-899c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                    <characteristic name="A" typeId="cf90-6480-ac95-eafe">1</characteristic>
+                    <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                    <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                    <characteristic name="Traits" typeId="7378-255d-2aae-d9c1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Penetrating" id="96a6-d3f5-c47b-2f5d" hidden="false" type="rule" targetId="95fb-df0e-f739-a02e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dual Hand Quillbows" hidden="false" id="395c-b4d6-2771-b3a6">
+              <costs>
+                <cost name="Points" typeId="99b9-8dd9-4075-6346" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Dual Hand Quillbows" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="3a0c-4956-a25a-fb6d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">8&quot;</characteristic>
+                    <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                    <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                    <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">1</characteristic>
+                    <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Flurry (7+)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dual Hand Quillbows" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="a062-9684-97a1-d466">
+                  <characteristics>
+                    <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">3&quot;</characteristic>
+                    <characteristic name="A" typeId="cf90-6480-ac95-eafe">2</characteristic>
+                    <characteristic name="S" typeId="5a55-ccfd-d867-e94b">4</characteristic>
+                    <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                    <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Flurry (7+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Flurry (x)" id="bc71-b438-7e76-ceca" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="382f-3eeb-9c39-4ba0"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e0c9-05cd-26a3-54c3"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="e8d7-e613-5827-24c7" primary="true" name="Infantry"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="1e1a-f633-c88b-2241" primary="false" name="Mammalian Boroughs"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rat King Abomination" hidden="false" id="f1cf-1dcd-be42-93c4">
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="200"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="d63e-2557-258a-6ae1" id="c462-b31a-346e-0b88" primary="true" name="Behemoth"/>
+        <categoryLink targetId="55e9-a56f-ed47-a210" id="8cce-7903-bd55-8cdc" primary="false" name="Rodent"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="4fc1-4c2f-00c0-628c" primary="false" name="Mammalian Boroughs"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rat King Abomination" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="ee88-297c-49ea-d0cb">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">12</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">7&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">4</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unwinding Stitches" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="dbe0-11e1-0317-e0f1">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">The Attacks characteristic for this unit&apos;s Melee Weapons is equal to its current Health</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mad Rodent&apos;s Finest Work" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="db66-1901-5873-4bd1">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">While this unit is within 10&quot; of a friendly Rodent Field Surgeon, each time it heals, add 2 to the amount of Health restored</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rat King Abomination" hidden="false" id="886a-5ca6-f6f5-52cc">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="abc6-9a18-d159-34ff" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Decaying Fists" hidden="false" id="2c4d-fc50-d19a-f196">
+                  <profiles>
+                    <profile name="Decaying Fists" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="33c3-47e8-a8fc-badc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">*</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">2</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Bludgeoning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Bludgeoning" id="00ff-3bb3-4d37-e501" hidden="false" type="rule" targetId="91bf-be2b-66c7-9575"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rusted Claws" hidden="false" id="5f4f-5973-5a44-07a2">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Rusted Claws" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="fded-0730-c6d9-1272">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">2&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">*</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">6</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">1</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="fecb-841b-ee7f-a886" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="17a1-f8ac-7087-0231" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pincer-Spine Tail" hidden="false" id="dc88-cf9b-08ef-84be">
+                  <costs>
+                    <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Pincer-Spine Tail" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="f43b-9918-4970-ceeb">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">6&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">5</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">2</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Flurry (6+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Flurry (x)" id="2e26-0572-ed7e-adb0" hidden="false" type="rule" targetId="be5c-ee31-1819-b884"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cb5-8082-2a9d-6586"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Live for the Borough" hidden="false" id="225e-0262-234c-ac88">
+      <profiles>
+        <profile name="Live for the Borough" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="f6d3-a4a5-b351-7aa2">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Order Phase) Target a friendly unit within friendly territory. Heal that unit 1d4+1</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a unit that started the turn within melee range of an enemy unit is still alive at the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8465-946a-a16a-4819" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="4cd8-f6cf-cc44-3e41" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fight for the Borough" hidden="false" id="887a-e3e4-4abc-fec3">
+      <profiles>
+        <profile name="Fight for the Borough" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="c076-d353-8c66-4b02">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit outside of friendly territory. That unit gains +1 skill on all weapons for the rest of the turn.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly unit destroyed an enemy unit within enemy territory.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e47d-3d12-d81f-56d5" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="5fef-a27f-1654-3159" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Die for the Borough" hidden="false" id="34e9-532d-0e7a-6e2d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c85c-c4d1-d9a1-1edc" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Die for the Borough" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="9c57-6b44-eacd-6e9a">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit within melee range of enemy models. That unit gains the Disposable keyword</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if at least two friendly units were destroyed outside of friendly territory</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="67ba-ecdd-5d27-c86e" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Disposable" id="a921-80ba-d9d5-992f" hidden="false" type="rule" targetId="1a42-8ac5-c965-6898"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Establish Burrows" hidden="false" id="c795-9af4-3a39-4631">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4931-0497-f7e1-8e18" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Establish Burrows" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="950b-8748-13b7-3227">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Positioning Phase) Target a friendly Elite unit within 1&quot; of any terrain piece that has not completed any orders this phase. That unit may be set up within 1&quot; of another terrain piece within 6&quot; of the target terrain piece. That friendly unit cannot make any more orders in this phase</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if you have at least two different Elite units controlling Core terrain pieces within different zones</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="da7d-4e99-7cbc-469e" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Predatory Aggression" hidden="false" id="8ae7-cdbc-9ef1-d07c">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="111b-b070-ffe0-b79e" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Predatory Aggression" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="2724-98ba-f631-b41f">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target one friendly Predator unit. That unit gains +1 to the attacks of all of its weapons if it targets the closest enemy unit.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly Predator unit killed an enemy unit within Enemy territory this turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9e5c-2a6c-e893-27c3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Prey instincts" hidden="false" id="bbe1-2ddd-1bf6-06a7">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="d681-3ab3-d147-ee99" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0778-ee81-c1b8-3d13" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Prey instincts" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="5bff-ffa4-ee6e-4add">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target one friendly Prey unit that has declared an Attack Order this turn. After resolving that Attack Order, the unit may move 1d4&quot;</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if there is at least one non-Champion prey unit within 3&quot; of any battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tunnel Fighters" hidden="false" id="a1d0-4050-d791-edfa">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="c0b1-ed39-fd20-26fe" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tunnel Fighters" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="6b2e-9c65-3f28-d514">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target a friendly unit. That unit gains +1 to skill of shooting weapons when targeting an enemy unit on a higher elevation level.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly unit that was the target of the &quot;Burrowing Assault&quot; this game destroyed an enemy unit this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8d7b-1ce9-77fe-558d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord of the Frontline" hidden="false" id="0d8c-a107-edeb-e495">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="8b61-07f0-3c1f-918a" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="90e6-9827-1e84-95cf" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Lord of the Frontline" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="e019-889b-4b49-c09c">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target one friendly Bunny Thegn within friendly territory. After an enemy unit has been the target of its &quot;Objective Sighted&quot; rule, each enemy unit within 6&quot; of that unit suffers -1 to their Evade characteristic for the rest of the turn.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a Bunny Thegn destroys an enemy Elite or Champion unit that was outside of friendly territory.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hare Raid" hidden="false" id="2d2a-2707-cbf9-6cce">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="0e6c-f13b-5618-e384" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="87b7-6d03-de16-093f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Hare Raid" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="ae22-f84f-e9a4-2deb">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Positioning Phase) Target one friendly Hare Huscarls unit and one Core Terrain piece within 1&quot; of that unit. Enemy units within range of that terrain piece must resolve the effects of a Fire Token at the end of the turn</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly Hare Huscarl unit killed an enemy unit within range of a Core terrain piece</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tactical Redirection Bounce" hidden="false" id="3363-ee6b-5c9f-ff52">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="b6f4-3927-5fa6-9639" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tactical Redirection Bounce" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="ddd5-4f2f-bd99-5275">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target a friendly unit. Before that unit completes an Attack Order against a unit within range of its melee weapons, models in this unit may move up to 4&quot; but must stay within range of the enemy unit&apos;s melee weapons</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if one or more friendly units ended the turn on top of a Heavy Terrain piece.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eccc-75bb-64e1-139d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Quillbow Arsenal" hidden="false" id="a8e8-5d8d-41ba-0941">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="0f08-a7b6-24a8-ba38" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6e49-d607-9791-d322" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Quillbow Arsenal" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="06a3-e1ed-d7f1-4dc9">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) After declaring an Attack Order with a friendly Mammalian Borough unit, all &quot;Quillbow&quot; weapons equipped by that unit gain the Evade -1 trait</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if a friendly unit destroyed an enemy unit with attacks from a &quot;Quillbow&quot; weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Evade (-x)" id="b453-afa5-9e4f-602d" hidden="false" type="rule" targetId="b33a-b698-736b-bcf7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Demoralizing Tactics" hidden="false" id="d057-1b9b-f81c-f1eb">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="ba39-a322-8e18-ae0a" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fa2a-ecd9-4dfc-d5fa" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Demoralizing Tactics" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="82a6-93e3-7f5f-19cd">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target one friendly Mammalian Boroughs unit with either a Stun or Fear token. That unit increases its armour value by one stage for the rest of the turn.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shade of the Daffydil" hidden="false" id="61f9-94a4-8ca0-f678">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="a2a4-d973-010c-132d" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4424-7188-1a51-6405" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Shade of the Daffydil" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="bf94-906a-99f3-6b2f">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target one friendly Mammalian Borough unit that is within range of a Core Terrain piece but not on top of that terrain piece. For the rest of the turn, enemy weapons targeting that unit must decrease their Skill by one.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP if you control one ore more Core Terrain pieces while not being on top of those Core Terrain pieces</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Salt the Deadlands" hidden="false" id="9324-9e03-c7b5-be2e">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="ac5d-ccae-bc92-f860" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0071-6533-3b4f-4f6f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Salt the Deadlands" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="498a-2721-4ce3-4d85">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">(Engage Phase) Target one Terrain Feature within 1&quot; of a friendly Mammalian Borough unit. For the rest of the turn, enemy models have their Intelligence halved while completing an Action order on this terrain feature</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP at the end of the turn if you control more Core Terrain features within Enemy Territory than your opponent.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rodent Tenacity" hidden="false" id="b4d9-851c-fefa-6773">
+      <categoryLinks>
+        <categoryLink targetId="8383-cdcf-c817-b502" id="c62f-0ab0-6b84-06d3" primary="true" name="Secondary Cards"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f88e-903f-ee42-369d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Rodent Tenacity" typeId="7b24-8daa-9ff7-6596" typeName="Secondary Cards" hidden="false" id="6477-8140-e7c2-4681">
+          <characteristics>
+            <characteristic name="Conflict" typeId="a2db-9581-af35-be7e">Target a friendly Mammalian Boroughs Rat or Mouse unit. For each point of health that unit is missing, increase the attacks characteristic of Melee weapons equipped on this unit by one.</characteristic>
+            <characteristic name="Conquest" typeId="f566-81a1-8939-88b8">Gain 1VP  at the end of the turn if a friendly Rat or Mouse unit is below half health and still on the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Padfoot, Thegn of Stamford" hidden="false" id="52f1-269b-21d6-8359">
+      <profiles>
+        <profile name="On Your Feet" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="c8df-6ad2-b821-2195">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">(Order Phase): Pick one friendly unit within 6&quot; of this model, return up to 1d4 lost wounds to that unit. If there were spare wounds not allocated (because the unit was at max health), also give that unit +1 order</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="I really thought they&apos;d make it" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="76a0-fa33-c0d0-ca08">
+          <characteristics>
+            <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Once per phase, if a friendly Infantry unit within 6&quot; of this unit is destroyed, give this unit +1 Order. If Padfoot, Thegn of Stamford has already activated this phase, you may immediately complete that order after the current unit has completed their activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Padfoot, Thegn of Stamford" typeId="585a-eefa-6850-0784" typeName="Unit" hidden="false" id="6f64-1bce-4eb7-3a98">
+          <characteristics>
+            <characteristic name="Health" typeId="1896-8060-6bfe-6075">8</characteristic>
+            <characteristic name="M" typeId="b9ed-1ab5-c35c-cc85">6&quot;</characteristic>
+            <characteristic name="I" typeId="1007-2da1-ace7-8422">5</characteristic>
+            <characteristic name="E" typeId="b09c-9be0-e3db-bb1d">4</characteristic>
+            <characteristic name="Armor" typeId="4700-cec3-6b57-4102">Medium</characteristic>
+            <characteristic name="Orders" typeId="298c-c37d-3cd0-c8c3">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="99b9-8dd9-4075-6346" value="150"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Padfoot, Thegn of Stamford" hidden="false" id="2508-d062-fc8e-8099">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="4a31-527e-4107-26cd" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Carapace Basher" hidden="false" id="9133-5f81-1e7f-2edf">
+                  <profiles>
+                    <profile name="Carapace Basher" typeId="3d06-6906-ae15-da7d" typeName="Melee Weapons" hidden="false" id="146a-4568-862a-3330">
+                      <characteristics>
+                        <characteristic name="Range" typeId="0ead-d6bf-6fdc-2250">1&quot;</characteristic>
+                        <characteristic name="A" typeId="cf90-6480-ac95-eafe">3</characteristic>
+                        <characteristic name="S" typeId="5a55-ccfd-d867-e94b">5</characteristic>
+                        <characteristic name="D" typeId="363a-1515-00a2-c70b">3</characteristic>
+                        <characteristic name="Traits" typeId="7378-255d-2aae-d9c1">Bludgeoning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Bludgeoning" id="6026-913c-70fc-4bc9" hidden="false" type="rule" targetId="91bf-be2b-66c7-9575"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6146-c0b5-f017-5b0d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6146-c0b5-f017-5b0d-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapons" id="2691-d1ed-9299-ea64" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d8a-8d8d-5217-a5eb-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d8a-8d8d-5217-a5eb-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="First Expanse" hidden="false" id="a8d0-7809-a8b0-ab9f">
+                  <profiles>
+                    <profile name="First Expanse" typeId="d259-6a61-654a-8ed2" typeName="Ranged Weapons" hidden="false" id="fb6a-55c1-7dd3-7f3a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="ad9d-416e-ad23-ce51">20&quot;</characteristic>
+                        <characteristic name="A" typeId="4f0e-94ab-b8cc-ca0f">2</characteristic>
+                        <characteristic name="S" typeId="6406-8b9b-758e-3aeb">6</characteristic>
+                        <characteristic name="D" typeId="f6d0-f8ca-0d05-ab3c">3</characteristic>
+                        <characteristic name="Traits" typeId="6bcf-b935-f8fd-59cc">Piercing</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Piercing" id="3f9b-dc78-8455-1a80" hidden="false" type="rule" targetId="3f34-9009-582f-c130"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Crystalline Telescope" hidden="false" id="5c59-5d5d-4937-1ccf">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Crystalline Telescope" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="c2c6-a932-2741-a6d0">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Shooting weapons equipped by this Champion increase their range by 6”</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="681c-c89f-c90e-02d5-min" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="681c-c89f-c90e-02d5-max" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="7cdc-11fd-ee3d-709c" id="e262-d7be-3099-f1e7" primary="true" name="Veteran Hero"/>
+        <categoryLink targetId="6397-ba1e-3f8c-fae9" id="a096-ac01-860d-2e56" primary="false" name="Infantry"/>
+        <categoryLink targetId="9390-bf39-3d27-bbc1" id="9bd7-4044-36dd-398e" primary="false" name="Champion"/>
+        <categoryLink targetId="d86e-a379-3237-ede9" id="1527-f4fc-c47f-5b8e" primary="false" name="Mammalian Boroughs"/>
+        <categoryLink targetId="12ff-967b-8c5a-1de0" id="fed5-245a-f2bf-eab1" primary="false" name="Bunny"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Unique Traits" hidden="false" id="08d7-59f1-8ba1-ac6e" type="selectionEntryGroup" targetId="b894-00a4-c659-ee85"/>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Bunny Thegn" hidden="false" id="aa1d-cd46-fa72-bc3e" targetId="d217-ebfa-9207-5c65" type="selectionEntry"/>
+    <entryLink import="true" name="Rodent Field Surgeon" hidden="false" id="0112-d176-e8d7-55b8" targetId="9f5c-4954-883d-41dc" type="selectionEntry"/>
+    <entryLink import="true" name="Foxjaeger" hidden="false" id="97d5-eb1e-0798-5061" targetId="c6b6-bb23-d2b2-17af" type="selectionEntry"/>
+    <entryLink import="true" name="Hoppers" hidden="false" id="a93e-138c-72a4-52ed" targetId="c395-bbba-6371-1d13" type="selectionEntry"/>
+    <entryLink import="true" name="Bunny Veteran Team" hidden="false" id="db76-612f-c114-89c9" targetId="49c0-51e4-2b6f-f82e" type="selectionEntry"/>
+    <entryLink import="true" name="Hare Huscarls" hidden="false" id="2f63-c7bb-3396-8d38" targetId="90a2-d4d5-db14-d249" type="selectionEntry"/>
+    <entryLink import="true" name="Mole Tunnelers" hidden="false" id="23f5-6c7e-c9c3-e987" targetId="eeb2-6499-fe96-a0e7" type="selectionEntry"/>
+    <entryLink import="true" name="Nox Interrogator" hidden="false" id="ca68-2636-80bc-1d51" targetId="f3bf-5e8a-8410-5f9b" type="selectionEntry"/>
+    <entryLink import="true" name="Hedgehog Quillbowmen" hidden="false" id="446d-4f8c-0c7e-559e" targetId="5493-93bc-6974-d6eb" type="selectionEntry"/>
+    <entryLink import="true" name="Rat King Abomination" hidden="false" id="5b38-4da8-413a-e373" targetId="f1cf-1dcd-be42-93c4" type="selectionEntry"/>
+    <entryLink import="true" name="Die for the Borough" hidden="false" id="c9e4-7909-47a5-1cdb" targetId="34e9-532d-0e7a-6e2d" type="selectionEntry"/>
+    <entryLink import="true" name="Establish Burrows" hidden="false" id="9f06-7bec-ca61-d237" targetId="c795-9af4-3a39-4631" type="selectionEntry"/>
+    <entryLink import="true" name="Fight for the Borough" hidden="false" id="2643-8cd3-d7b3-ce4b" targetId="887a-e3e4-4abc-fec3" type="selectionEntry"/>
+    <entryLink import="true" name="Live for the Borough" hidden="false" id="e675-3c67-63f6-3e91" targetId="225e-0262-234c-ac88" type="selectionEntry"/>
+    <entryLink import="true" name="Predatory Aggression" hidden="false" id="3d38-0a8e-1609-5d2e" targetId="8ae7-cdbc-9ef1-d07c" type="selectionEntry"/>
+    <entryLink import="true" name="Prey instincts" hidden="false" id="1f2e-bd5d-77fa-cc00" targetId="bbe1-2ddd-1bf6-06a7" type="selectionEntry"/>
+    <entryLink import="true" name="Tunnel Fighters" hidden="false" id="9b84-0962-1104-3cb6" targetId="a1d0-4050-d791-edfa" type="selectionEntry"/>
+    <entryLink import="true" name="Hare Raid" hidden="false" id="00a7-6d31-0389-1469" targetId="2d2a-2707-cbf9-6cce" type="selectionEntry"/>
+    <entryLink import="true" name="Tactical Redirection Bounce" hidden="false" id="a494-9413-acc0-cd33" targetId="3363-ee6b-5c9f-ff52" type="selectionEntry"/>
+    <entryLink import="true" name="Quillbow Arsenal" hidden="false" id="6fcc-c00f-f99c-d55d" targetId="a8e8-5d8d-41ba-0941" type="selectionEntry"/>
+    <entryLink import="true" name="Demoralizing Tactics" hidden="false" id="47f6-7b7f-c648-d6a1" targetId="d057-1b9b-f81c-f1eb" type="selectionEntry"/>
+    <entryLink import="true" name="Shade of the Daffydil" hidden="false" id="46de-1e59-f237-a579" targetId="61f9-94a4-8ca0-f678" type="selectionEntry"/>
+    <entryLink import="true" name="Salt the Deadlands" hidden="false" id="6c9b-79c6-ba4f-8c94" targetId="9324-9e03-c7b5-be2e" type="selectionEntry"/>
+    <entryLink import="true" name="Rodent Tenacity" hidden="false" id="46e9-24b8-9282-e6ff" targetId="b4d9-851c-fefa-6773" type="selectionEntry"/>
+    <entryLink import="true" name="Padfoot, Thegn of Stamford" hidden="false" id="a899-9e9a-194d-d146" targetId="52f1-269b-21d6-8359" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Unique Traits" id="b894-00a4-c659-ee85" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Loud Squeaker" hidden="false" id="03d6-420f-4172-2d6d">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="25"/>
+          </costs>
+          <profiles>
+            <profile name="Loud Squeaker" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="3215-a7de-0440-75fe">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">This Champion increases the range of all its Critter Card abilities by 3&quot;</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d0df-6209-80ba-d488" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mealworm Rations" hidden="false" id="44dc-8485-2e32-eb95">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e013-7a84-fa0f-6a28" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Mealworm Rations" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="36b4-1f11-1a4e-38d9">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Once per game in the Order Phase, target a friendly unit within 6”, heal that unit 1d4+1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enchanted Weave" hidden="false" id="63c8-60a1-0366-2c12">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f084-5057-0741-0b3d" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Enchanted Weave" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="10cf-10be-6503-a510">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Improve this Champion&apos;s Armour by one step.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sap-Coated Bullets" hidden="false" id="53f6-1e38-38e2-6857">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="225d-6078-557b-ecba" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Sap-Coated Bullets" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="68a1-c7f3-4955-4f6d">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Shooting weapons equipped by this Champion gain the “Stun” keyword</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Stun [Passive] [Complexity 3]" id="e520-4883-3de5-26e0" hidden="false" type="rule" targetId="d5b9-45c1-d256-547e"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ceaseless Hunter" hidden="false" id="cada-b206-72ad-b212">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="25"/>
+          </costs>
+          <profiles>
+            <profile name="Ceaseless Hunter" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="dd78-cb1c-fabd-a55c">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Once per game, target an enemy Champion within line of sight. Gain +1 Damage to melee weapons equipped by this Champion that target that enemy Champion</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6631-eb1f-40e2-a8e2" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Crystalline Telescope" hidden="false" id="5363-b0ec-f08b-9c4b">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="30"/>
+          </costs>
+          <profiles>
+            <profile name="Crystalline Telescope" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="73a8-8ef5-068e-b397">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Shooting weapons equipped by this Champion increase their range by 6”</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d9ff-8ba2-aab8-5269" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Secret Council Mission" hidden="false" id="805b-1f11-84da-9757">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0b69-0417-2e98-dad2" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Secret Council Mission" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="37a3-a448-041e-5f2b">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Once per game, after drawing your Secondary Mission cards for the turn, you may look at the top card of the Secondary Mission deck. You may choose to replace a card within your hand with that top card, and if so, shuffle the replaced card back into the Secondary Mission deck.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grizzled Veteran" hidden="false" id="aaad-7a1b-bd6c-6b22">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="40"/>
+          </costs>
+          <profiles>
+            <profile name="Grizzled Veteran" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="7300-9bae-beb7-ca4c">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">The first time this Champion dies, do not remove it from the battlefield. At the end of the turn, heal this unit 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2751-ed58-461c-90ba" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Thorn-wrapped Weapon" hidden="false" id="19b8-86b7-d694-07d2">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Thorn-wrapped Weapon" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="78d4-bd57-8390-44e2">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">This unit gains “Riposte +1 dam” on all Melee weapons</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Riposte (+x dam)" id="128c-3754-0780-b92c" hidden="false" type="rule" targetId="91ae-2a01-e2aa-d841"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a623-9e54-852a-1828" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master of the Land" hidden="false" id="0b38-63f3-963f-7af9">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eb9b-4216-8024-025d" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Master of the Land" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="2242-acfc-9a44-881a">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">Once per game, this Champion may complete an Order for free</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unerring Duty" hidden="false" id="90ee-740f-fb50-ea47">
+          <costs>
+            <cost name="Points" typeId="99b9-8dd9-4075-6346" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b2c-8dd5-cd14-a37b" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Unerring Duty" typeId="d811-2a62-b61b-ba23" typeName="Abilities" hidden="false" id="d104-df63-63d1-7452">
+              <characteristics>
+                <characteristic name="Ability" typeId="5ab2-6b72-87f0-6888">This unit gains the following Active Order: Prey’s Duty [1] (Order Phase): Deal 2 Unavoidable damage to a friendly Prey unit within 6”, and then target one Predator unit within 6”. For the rest of the turn, that Predator unit gains a +1 bonus to its weapons Attacks characteristic, as if it were under the effect of the Bloodstained rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e18-7345-dbdf-ab7e"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
